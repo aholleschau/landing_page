@@ -42,7 +42,6 @@ body {
 
 .container {
     padding: 50px 100px;
-
 }
 
 .navbar .container,
@@ -55,6 +54,7 @@ body {
 
 .hero .container {
     justify-content: center;
+    align-items: center;
     gap: 24px;
 }
 
@@ -65,9 +65,19 @@ footer,
     
 }
 
+.hero .container div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .hero .container div p {
     font-size: 18px;
     color: #E5E7EB;
+}
+
+.hero .container div button {
+    align-self: flex-start;
 }
 
 h1 {
@@ -96,6 +106,7 @@ h2 {
 
 .info .container {
     gap: 48px;
+    margin: 24px 0;
 }
 
 .tile-container {
@@ -107,6 +118,7 @@ h2 {
     border: 3px solid #3882F6;
     width: 200px;
     height: 200px;
+    margin-bottom: 14px;
 }
 
 .tile {
@@ -126,6 +138,7 @@ h2 {
     width: 1000px;
     height: 400px;
     margin: auto;
+    justify-content: center;
 }
 
 .quote,
@@ -146,9 +159,16 @@ h2 {
 
 .call-to-action {
     background-color: #3882F6;
-    width: 800px;
-    height: 400px;
-    align-self: center;
+    align-self: stretch;
     border-radius: 10px;
-    margin: 150px 48px;
+    margin: 150px;
+}
+
+.call-to-action .container {
+    justify-content: center;
+    gap: 80px;
+}
+
+footer {
+    text-align: center;
 }
